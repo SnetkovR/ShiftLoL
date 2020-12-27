@@ -15,13 +15,13 @@ class ProGamesPredictions:
 
     @staticmethod
     def get_data():
-        data = pd.read_csv('data/lol_pro_games_data_0407.csv')
+        data = pd.read_csv('app/data/lol_pro_games_data_0407.csv')
 
         return data
 
     @staticmethod
     def get_model():
-        with open('data/model_0407_01.pkl', 'rb') as model_pkl:
+        with open('app/data/model_0407_01.pkl', 'rb') as model_pkl:
             lgb_clf = pickle.load(model_pkl)
 
         return lgb_clf
@@ -39,7 +39,7 @@ class ProGamesPredictions:
             'team_1': team_1,
             'team_2': team_2,
         }
-
+        print('here')
         if self.check_correct(team_1, team_2):
             pairs = [team_1, team_2]
             pairs = self.swap_pairs(pairs)

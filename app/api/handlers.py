@@ -23,4 +23,4 @@ async def predict_handler(request):
     logging.info('data:', data)
     team_1, team_2 = data['team_1'], data['team_2']
 
-    return web.json_response(await get_prediction(team_1, team_2))
+    return web.json_response(get_prediction(team_1, team_2))
