@@ -5,6 +5,7 @@ from app.routes import setup_routes
 from app.utils.configurator import get_config
 from app.utils.logs import init_logger
 
+
 def init_app(argv):
     app = web.Application()
     app['config'] = get_config(argv)

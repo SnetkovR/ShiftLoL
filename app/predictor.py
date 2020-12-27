@@ -1,6 +1,6 @@
 import asyncio
 import concurrent.futures
-from lol_pro_games_predictions import ProGamesPredictions
+from .lol_pro_games_predictions import ProGamesPredictions
 
 
 async def get_prediction(team_1, team_2):
