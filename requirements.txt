@@ -4,7 +4,7 @@ attrs==19.1.0
 chardet==3.0.4
 idna==2.8
 multidict==4.5.2
-PyYAML==5.1
+PyYAML==5.4
 requests==2.21.0
 trafaret==1.2.0
 trafaret-config==2.0.2
